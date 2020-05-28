@@ -1,0 +1,25 @@
+{
+    "name": "vcast-lang",
+    "displayName": "VectorCAST Language",
+    "description": "VectorCAST Language support for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vcast",
+            "aliases": ["VectorCAST", "vcast"],
+            "extensions": [".tst",".env"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vcast",
+            "scopeName": "script.vcast",
+            "path": "./syntaxes/vcast.tmLanguage.json"
+        }]
+    }
+}
