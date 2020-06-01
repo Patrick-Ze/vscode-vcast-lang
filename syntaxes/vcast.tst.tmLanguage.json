@@ -1,0 +1,77 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "VectorCAST Test Script",
+	"patterns": [
+		{
+		  "match": "^\\s*--.*$",
+		  "name": "comment.line.vcast"
+		},
+		{
+		  "match": "^TEST\\.(?:UNIT|SUBPROGRAM|NAME)(:)(.*)$",
+		  "name": "keyword.vcast",
+		  "captures": {
+			"1": {
+			  "name": "keyword.vcast.cmd"
+			},
+			"2": {
+			  "name": "support.variable.vcast"
+			}
+		  }
+		},
+		{
+		  "begin": "^TEST\\.NOTES(:)",
+		  "end": "^TEST\\.END_NOTES(:)",
+		  "name": "keyword.vcast",
+		  "contentName": "string.unquoted.vcast.notes",
+		  "beginCaptures": {
+			"1": {
+			  "name": "keyword.vcast.cmd"
+			}
+		  },
+		  "endCaptures": {
+			"1": {
+			  "name": "keyword.vcast.cmd"
+			}
+		  }
+		},
+		{
+		  "begin": "^TEST\\.(\\w+)_USER_CODE(:)(.*)$",
+		  "end": "^TEST\\.END_(\\1)_USER_CODE(:)",
+		  "name": "keyword.vcast",
+		  "contentName": "keyword.vcast.cmd",
+		  "beginCaptures": {
+			"2": {
+			  "name": "keyword.vcast.cmd"
+			},
+			"3": {
+			  "name": "entity.name.function.vcast"
+			}
+		  },
+		  "endCaptures": {
+			"2": {
+			  "name": "keyword.vcast.cmd"
+			}
+		  }
+		},
+		{
+		  "match": "^TEST\\.[^:]+$",
+		  "name": "keyword.vcast"
+		},
+		{
+		  "match": "^TEST\\.[^:]+(:)([^:]*)(:)?",
+		  "name": "keyword.vcast",
+		  "captures": {
+			"1": {
+			  "name": "keyword.vcast.cmd"
+			},
+			"2": {
+			  "name": "entity.name.function.vcast"
+			},
+			"3": {
+			  "name": "keyword.vcast.cmd"
+			}
+		  }
+		}
+	  ],
+	"scopeName": "vcast.tst"
+}

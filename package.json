@@ -10,16 +10,41 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "vcast",
-            "aliases": ["VectorCAST", "vcast"],
-            "extensions": [".tst",".env"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "vcast",
-            "scopeName": "script.vcast",
-            "path": "./syntaxes/vcast.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "vcast.tst",
+                "aliases": [
+                    "VCAST Script",
+                    "vcast script"
+                ],
+                "extensions": [
+                    ".tst"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "vcast.env",
+                "aliases": [
+                    "VCAST Enviro",
+                    "vcast enviro"
+                ],
+                "extensions": [
+                    ".env"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vcast.tst",
+                "scopeName": "vcast.tst",
+                "path": "./syntaxes/vcast.tst.tmLanguage.json"
+            },
+            {
+                "language": "vcast.env",
+                "scopeName": "vcast.env",
+                "path": "./syntaxes/vcast.env.tmLanguage.json"
+            }
+        ]
     }
 }
