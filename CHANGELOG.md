@@ -1,9 +1,7 @@
-# Change Log
+# VectorCAST Syntax Highlight
 
-All notable changes to the "vcast-lang" extension will be documented in this file.
+This extension provides syntax highlight for VectorCAST test script (.tst) and test environment (.env)
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 1.0
 
-## [Unreleased]
-
-- Initial release
+- Initial release. Add basic support to these two file types.
