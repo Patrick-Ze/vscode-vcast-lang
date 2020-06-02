@@ -3,12 +3,17 @@
     "displayName": "VectorCAST Language",
     "description": "VectorCAST Language support for VS Code",
     "version": "0.0.1",
+    "publisher": "PatrickZe",
     "engines": {
         "vscode": "^1.45.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Patrick-Ze/vscode-vcast-lang"
+    },
     "contributes": {
         "languages": [
             {
