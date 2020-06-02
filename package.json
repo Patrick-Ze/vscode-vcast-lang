@@ -2,7 +2,7 @@
     "name": "vcast-lang",
     "displayName": "VectorCAST Language",
     "description": "VectorCAST Language support for VS Code",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "PatrickZe",
     "engines": {
         "vscode": "^1.45.0"
