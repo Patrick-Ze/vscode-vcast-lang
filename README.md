@@ -12,6 +12,6 @@ Contribute syntax highlight for following file types:
 
 ## Release Notes
 
-### 1.0
+### 0.1
 
 Initial release. Add basic support to these two file types.
