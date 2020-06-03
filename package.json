@@ -1,8 +1,8 @@
 {
     "name": "vcast-lang",
-    "displayName": "VectorCAST Language",
-    "description": "VectorCAST Language support for VS Code",
     "version": "0.1.0",
+    "displayName": "VectorCAST Highlight",
+    "description": "Unofficial VectorCAST syntax highlight support for VS Code",
     "publisher": "PatrickZe",
     "engines": {
         "vscode": "^1.45.0"
@@ -10,9 +10,19 @@
     "categories": [
         "Programming Languages"
     ],
+    "keywords": [
+        "VCAST",
+        "Vector CAST",
+        "tst",
+        "env"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/Patrick-Ze/vscode-vcast-lang"
+    },
+    "bugs": {
+        "url": "https://github.com/Patrick-Ze/vscode-vcast-lang/issues",
+        "email": "patrick.zeng.1995@gmail.com"
     },
     "contributes": {
         "languages": [
