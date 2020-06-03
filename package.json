@@ -5,7 +5,7 @@
     "description": "Unofficial VectorCAST syntax highlight support for VS Code",
     "publisher": "PatrickZe",
     "engines": {
-        "vscode": "^1.45.0"
+        "vscode": "^1.39.0"
     },
     "categories": [
         "Programming Languages"
