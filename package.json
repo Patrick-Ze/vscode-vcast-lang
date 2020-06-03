@@ -45,19 +45,18 @@
                 ],
                 "extensions": [
                     ".env"
-                ],
-                "configuration": "./language-configuration.json"
+                ]
             }
         ],
         "grammars": [
             {
                 "language": "vcast.tst",
-                "scopeName": "vcast.tst",
+                "scopeName": "source.vcast.tst",
                 "path": "./syntaxes/vcast.tst.tmLanguage.json"
             },
             {
                 "language": "vcast.env",
-                "scopeName": "vcast.env",
+                "scopeName": "source.vcast.env",
                 "path": "./syntaxes/vcast.env.tmLanguage.json"
             }
         ]
