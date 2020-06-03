@@ -12,6 +12,6 @@ Contribute syntax highlight for following file types:
 
 ## Release Notes
 
-### 0.1
+### 0.2
 
-Initial release. Add basic support to these two file types.
+Fix the problem that .env association does not work.
